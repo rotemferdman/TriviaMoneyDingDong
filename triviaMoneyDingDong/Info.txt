@@ -1,0 +1,33 @@
+FROM SERVER:
+
+Message codes:
+
+L - login
+S - signup
+O - log out
+R - get all rooms
+P - get players in specific room
+J - join room
+C - create room
+H - statistics
+B - best statistics
+T - start game
+K - check start game
+
+FROM SERVER:
+get rooms example - R10`room1`room2`room3
+statistics example - Hx`avgTime`correctAns`Ans`amountOfGames`wins
+best players statistics example - Bx`name`avgTime`correctAns`Ans`amountOfGames`wins x5 times
+
+TO SERVER:
+General example: codeLength`data1`data2
+
+GENERAL EXAMPELS:
+signUp msg DATA: username`password`email
+login msg DATA: username`password
+getPlayersInRoomDATA:`roomName 
+joinRoomDATA: `roomName
+
+ERROR CODES:
+Error: 1
+Success: 0
